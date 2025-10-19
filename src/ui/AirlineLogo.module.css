@@ -1,0 +1,25 @@
+.wrap{display:inline-flex;align-items:center;gap:8px;user-select:none}
+.sm{font-size:12px}.md{font-size:14px}.lg{font-size:16px}
+.word{font-weight:800;letter-spacing:.2px}
+.wordThin{font-weight:600;opacity:.9}
+
+.pobeda .word{color:#1E78FF;font-weight:800}
+.pobeda .dots{display:inline-flex;gap:4px;align-items:center}
+.pobeda .dots i{width:6px;height:6px;border-radius:50%;background:#69B6FF;display:inline-block}
+
+.s7 .badge{
+  display:inline-grid;place-items:center;width:28px;height:28px;border-radius:999px;
+  background:#C4E538;color:#1A1A1A;font-weight:900;letter-spacing:.2px;
+}
+.s7 .word{color:#1A1A1A;font-weight:800}
+
+.aeroflot .word{color:#1F3C88;font-weight:900}
+.aeroflot .wing{
+  width:14px;height:8px;background:linear-gradient(90deg,#1F3C88,#4F7DEA);
+  clip-path:polygon(0 50%,100% 0,100% 100%);
+}
+
+.utair .word{color:#1C4BE0;font-weight:900}
+
+.ural .word{color:#D81F2A;font-weight:1000}
+.ural .wordThin{color:#D81F2A}

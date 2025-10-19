@@ -1,0 +1,10 @@
+.card{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px;display:grid;gap:12px;box-shadow:var(--shadow-card);}
+.top{display:grid;grid-template-columns: 1fr auto;align-items:center;gap:12px;}
+.price{font-size: var(--fs-price);font-weight: var(--fw-price);color: var(--brand);}
+.company{font-weight:700}
+.sep{height:1px;background:var(--border);margin:12px 0;}
+.bottom{display:grid;grid-template-columns: 1fr 1fr 1fr;gap:16px;}
+.block{display:grid;gap:4px}
+.label{color: var(--brand);font-weight: 700;margin-bottom: 4px;}
+
+@media(max-width:960px){.price{ font-size:24px;}.bottom{grid-template-columns: 1fr 1fr 1fr;gap:12px;}}

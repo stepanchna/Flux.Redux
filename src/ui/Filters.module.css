@@ -1,0 +1,64 @@
+.stack{
+  display:grid;
+  gap:16px;
+}
+
+.card{
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:16px;
+  box-shadow:var(--shadow-card);
+}
+
+.h{
+  margin:0 0 12px;
+  font-size:18px;
+  line-height:24px;
+  font-weight:700;
+}
+
+.group{ display:grid; gap:12px; }
+.row{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:16px;
+}
+
+.footer{
+  margin-top:16px;
+  display:flex;
+  gap:12px;
+}
+
+.btn{
+  padding:10px 14px;
+  border-radius:12px;
+  border:0;
+  cursor:pointer;
+  font-weight:700;
+  background:var(--brand);
+  color:#fff;
+}
+.btn:hover{ background:var(--brand-600); }
+
+.control{
+  appearance:none;
+  width:18px; height:18px;
+  border:2px solid var(--brand);
+  background:transparent;
+  display:grid; place-content:center;
+  cursor:pointer;
+}
+
+.cardStops .control{ border-radius:4px; }
+.cardStops .control:checked::before{
+  content:"✔"; color:var(--brand); font-size:14px; line-height:1;
+  transform: translateY(-1px);
+}
+
+.cardCompanies .control{ border-radius:50%; }
+.cardCompanies .control:checked::before{
+  content:""; width:10px; height:10px; border-radius:50%; background:var(--brand);
+}

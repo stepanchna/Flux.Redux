@@ -1,0 +1,37 @@
+.wrap{ display:none; }
+@media (max-width:960px){ .wrap{ display:block; margin-top:20px; margin-bottom:20px; } }
+.bar{
+width:100%; display:flex; justify-content:space-between; align-items:center;
+background:var(--brand); color:#fff; border:1px solid var(--brand);
+border-radius:10px; padding:12px 16px; font-weight:700;
+margin-bottom:16px;
+}
+.text{ overflow:hidden; white-space:nowrap; text-overflow:ellipsis; }
+.chev{ margin-left:12px; }
+.panel{
+margin-top:16px;background:var(--brand); color:#fff;
+border:1px solid var(--brand); border-radius:12px; padding:16px;
+}
+.columns{ display:grid; grid-template-columns:1fr 1fr; gap:20px;}
+.col{ display:grid; gap:12px; }
+.h{ font-weight:800; }
+.group{ display:grid; gap:12px; }
+.row{ display:flex; gap:10px; align-items:center; }
+@media (max-width:520px){ .columns{ grid-template-columns:1fr; } }
+.labelText{ color:#fff; font-weight:600; }
+.control{
+  appearance:none;
+  width:18px; height:18px;
+  border:2px solid #fff;
+  background:transparent;
+  display:grid; place-content:center;
+  cursor:pointer;
+}
+.colStops .control{ border-radius:4px; }
+.colStops .control:checked::before{
+  content:"✔"; color:#fff; font-size:14px; transform: translateY(-1px);
+}
+.colCompanies .control{ border-radius:50%; }
+.colCompanies .control:checked::before{
+  content:""; width:10px; height:10px; border-radius:50%; background:#fff;
+}
